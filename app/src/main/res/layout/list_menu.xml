@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <ImageView
+        android:id="@+id/icono"
+        android:layout_width="?android:attr/listPreferredItemHeight"
+        android:layout_height="?android:attr/listPreferredItemHeightLarge"
+        android:src="@android:drawable/ic_media_next"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/icono"
+        android:id="@+id/nombre"
+        android:text="nombre"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/icono"
+        android:layout_below="@+id/nombre"
+
+        android:id="@+id/descripcion"
+        android:text="decripcion"
+        android:layout_height="20dp" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_toRightOf="@+id/icono"
+        android:layout_below="@+id/descripcion"
+        android:id="@+id/precio"
+        android:text="precio"
+        android:layout_height="wrap_content" />
+    <RatingBar
+        android:layout_toRightOf="@+id/icono"
+        android:layout_below="@+id/precio"
+        android:layout_width="wrap_content"
+        style="?android:attr/ratingBarStyleSmall"
+        android:layout_height="wrap_content" />
+</RelativeLayout>
