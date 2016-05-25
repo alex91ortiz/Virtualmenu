@@ -16,6 +16,9 @@ import android.view.Menu;
 import android.view.MenuItem;
 import android.view.ViewGroup;
 
+import com.roughike.bottombar.BottomBar;
+import com.roughike.bottombar.OnMenuTabSelectedListener;
+
 import java.util.ArrayList;
 import java.util.List;
 
@@ -35,6 +38,24 @@ public class MainActivity extends AppCompatActivity {
 
         tabLayout = (TabLayout) findViewById(R.id.tabs);
         tabLayout.setupWithViewPager(viewPager);
+
+        BottomBar bottomBar = BottomBar.attach(this, savedInstanceState);
+        bottomBar.setItemsFromMenu(R.menu.menu_three_button, new OnMenuTabSelectedListener() {
+            @Override
+            public void onMenuItemSelected(int itemId) {
+                switch (itemId) {
+                    case R.id.recent_item:
+
+                        break;
+                    case R.id.favorite_item:
+
+                        break;
+                    case R.id.location_item:
+
+                        break;
+                }
+            }
+        });
 
         FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
