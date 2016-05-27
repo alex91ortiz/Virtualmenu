@@ -47,12 +47,6 @@ public class MainActivity extends AppCompatActivity {
                     case R.id.recent_item:
 
                         break;
-                    case R.id.favorite_item:
-
-                        break;
-                    case R.id.location_item:
-
-                        break;
                 }
             }
         });

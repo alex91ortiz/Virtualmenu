@@ -4,12 +4,5 @@
         android:id="@+id/recent_item"
         android:icon="@android:drawable/ic_dialog_alert"
         android:title="Recents" />
-    <item
-        android:id="@+id/location_item"
-        android:icon="@android:drawable/ic_dialog_alert"
-        android:title="Location" />
-    <item
-        android:id="@+id/favorite_item"
-        android:icon="@android:drawable/ic_dialog_alert"
-        android:title="Favorire" />
+
 </menu>
